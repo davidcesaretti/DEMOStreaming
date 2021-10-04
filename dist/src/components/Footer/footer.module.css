@@ -1,0 +1,86 @@
+.ctn {
+    height: 250px;
+    background-color: #1e1e1e;
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+.options {
+    width: 1200px;
+    padding: 20px;
+    color: #dad9d6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.option{
+    padding: 0px 15px;
+    border-right: 1px solid #FFF;
+    text-decoration: none;
+    color: #FFF;
+}
+.lastOption{
+    padding: 0px 15px;
+    text-decoration: none;
+    color: #FFF;
+}
+.copyright{
+    padding: 0px 15px;
+    color:#626b7a;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.downloads{
+    display: flex;
+    align-items: center;
+}
+.store{
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+}
+.store3{
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+}
+
+@media (max-width:480px){
+    .ctn {
+        height: 300px;
+        width: 480px;
+        display: flex;
+        justify-content: center;
+    }
+    .options {
+        width: 440px;
+    }
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .option{
+        margin: 5px;
+    }
+    .icons{
+        flex-direction: column;
+    }
+    .store{
+        width: 100px;
+        height: 60px;
+    }
+    .store3{
+        width: 90px;
+        height: 40px;
+    }
+}

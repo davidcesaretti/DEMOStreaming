@@ -1,0 +1,9 @@
+Desde la carpeta dist puede inicializar la aplicacion con el comando npm start.
+
+Cuenta con 3 pantallas, una de inicio donde puede elegir la seccion a la que quiere acceder (series o peliculas) y despues la pantalla especifica de cada seccion. Cada una tiene 2 vistas, una en tamaño normal para computadora y otra para moviles de 480 x 700.
+
+Los estilos se realizaron utilizando css modules y puede encontrar algunas etiquetas div sin aparente funcionamiento pero que estan ahi para centrar correctamente y de forma facil el contenido al ancho deseado, teniendo un contenedor padre que ocupe toda la pantalla y otro mas chico del tamaño con el que quiero trabajar en la aplicacion solo necesito centrar el contenedor mas chico en base al padre para tener acomodado a gusto. Utilice css modules porque es la forma con la que mas trabaje, estoy acostumbrado a su sintaxis y evita que pise estilos de distintos componentes por llamarlos de la misma forma, eso me da la opotunidad de reciclar nombres en partes similares y de esa forma hacer un poco mas facil el entender los estilos de toda la aplicacion.
+
+De haber tenido mas tiempo podria haber utilizado styled components pero como no es algo con lo que estoy comodo aun decidi utilizar lo que ya tenia mas practicado, con la misma logica descarte el uso de typescript que si bien he realizado un proyecto anterior con el sigo aprendiendolo y no me siento del todo comodo.
+
+En cuanto a la estructura de la aplicacion podria haber reutilizado el componente de series para que tambien sea el de peliculas siendo que el unico cambio es la informacion, tome una mala decision en un principio y ya despues considere que no tenia el tiempo suficiente para dedicarselo a ese cambio

@@ -1,0 +1,52 @@
+html{
+    min-height: 100%;
+    margin: 0;
+}
+body{
+    min-height: 100%;
+    margin: 0;
+}
+.content{
+    height: 600px;
+}
+.ctnTitle{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(47,46,45);
+    background: linear-gradient(360deg, rgba(47,46,45,1) 0%, rgba(47,46,45,1) 100%);
+}
+.content .ctnTitle div{
+    width: 1200px;
+}
+.title{
+    width: 1200px;
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+.ctn{
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    padding: 20px 0px;
+}
+.ctn .sectionCtn{
+    width: 1200px;
+    display: flex;
+}
+@media (max-width: 480px){
+    .content{
+        height: 500px;
+    }
+    .content .ctnTitle div{
+        width: 400px;
+    }
+    .title{
+        width: 440px;
+    }
+    .ctn .sectionCtn{
+        width: 400px;
+    }
+}

@@ -1,0 +1,29 @@
+.ctn{
+    width: 180px;
+    padding: 10px;
+}
+.ctn:hover{
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+.img{
+    height: 250px;
+    width: 180px;
+    background: url('../../assets/placeholder.png') no-repeat center;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.section{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.title{
+    background: #FFF;
+    color: #000000;
+}
