@@ -31,10 +31,7 @@ export function getMovies () {
                 payload: modernMovies
             })
         } catch (err) {
-            dispatch({
-                type: ERROR,
-                payload: err
-            })
+            console.log(err)
         }
     }
 }
@@ -68,10 +65,7 @@ export function getSeries () {
                 payload: modernSeries
             })
         } catch (err) {
-            dispatch({
-                type: ERROR,
-                payload: err
-            })
+            console.log(err)
         }
     }
 }

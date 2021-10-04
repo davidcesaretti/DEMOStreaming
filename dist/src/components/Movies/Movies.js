@@ -8,7 +8,6 @@ export function Movies () {
 
     const dispatch = useDispatch()
     const movies = useSelector(state => state.movies)
-    const error = useSelector(state => state.error)
     const [currentPage, setCurrentPage] = useState(0)
     const [loader, setLoader] = useState(false)
     const [movie, setMovie] = useState({
@@ -74,7 +73,7 @@ export function Movies () {
                 <div className={style.content}>
                     {
                         loader ? <div  className={style.loading}><p>Loading...</p></div> :
-                        error !== '' ? <div className={style.error}><p>Oops, something went wrong...</p></div>
+                        movies === undefined ? <div className={style.error}><p>Oops, something went wrong...</p></div>
                         :
                         filteredmovies?.map((e) => {
                             return (

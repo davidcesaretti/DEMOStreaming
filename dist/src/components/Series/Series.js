@@ -7,7 +7,6 @@ export function Series () {
 
     const dispatch = useDispatch()
     const series = useSelector(state => state.series)
-    const error = useSelector(state => state.error)
     const [currentPage, setCurrentPage] = useState(0)
     const [loader, setLoader] = useState(false)
     const [serie, setSerie] = useState({
@@ -72,7 +71,7 @@ export function Series () {
                 <div className={style.content}>
                     {
                         loader ? <div className={style.Loading}><p>Loading...</p></div> :
-                        error !== '' ? <div  className={style.error}><p>Oops, something went wrong...</p></div> :
+                        series === undefined ? <div  className={style.error}><p>Oops, something went wrong...</p></div> :
                         filteredmovies?.map((e) => {
                             return (
                                     <div
