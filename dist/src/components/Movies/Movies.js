@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect,} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import style from './movies.module.css'
 import { getMovies } from '../../actions'
@@ -63,6 +63,7 @@ export function Movies () {
 
 
     return (
+        
         <div>
             <div className={style.ctn}>
                 <div className={style.title}>
@@ -71,13 +72,14 @@ export function Movies () {
                     </div>
                 </div>
                 <div className={style.content}>
+                
                     {
                         loader ? <div  className={style.loading}><p>Loading...</p></div> :
                         movies === undefined ? <div className={style.error}><p>Oops, something went wrong...</p></div>
                         :
                         filteredmovies?.map((e) => {
                             return (
-                                    <div
+                                <div
                                         key={e.title}
                                         onClick={(f) => {handleClick(f)}}
                                         className={style.card}
